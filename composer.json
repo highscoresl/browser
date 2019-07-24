@@ -1,0 +1,33 @@
+{
+    "name": "highscore/browser",
+    "description": "A chromedriver / laravel dusk extension with a few extra utilities",
+    "require": {
+        "ext-json": "*",
+        "laravel/dusk": "^5.3",
+        "illuminate/support": "^5.8",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.2",
+        "spatie/phpunit-watcher": "^1.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Highscore\\Browser\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Agustín Rodríguez",
+            "email": "killgt@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Highscore\\Browser\\BrowserExtensionsProvider"
+            ]
+        }
+    }
+}
