@@ -10,6 +10,7 @@ use Highscore\Browser\Macros\TransparentScreenshot;
 use Highscore\Browser\Macros\WaitDocumentLoad;
 use Highscore\Browser\Macros\WaitForClickable;
 use Highscore\Browser\Macros\WaitFontLoad;
+use Highscore\Browser\Macros\WaitForVisible;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Dusk\Browser;
 
@@ -44,7 +45,7 @@ class BrowserExtensionsProvider extends ServiceProvider
         });
 
         Browser::macro('waitForVisible', function($xpath) {
-            (new WaitFontLoad)($this, $xpath);
+            (new WaitForVisible())($this, $xpath);
 
             return $this;
         });
