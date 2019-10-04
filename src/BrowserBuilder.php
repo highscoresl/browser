@@ -20,8 +20,8 @@ class BrowserBuilder
     private static $baseConfig = [
     ];
 
-    protected $host = 'http://127.0.0.1';
-    protected $port = 9515;
+    protected $host;
+    protected $port;
     protected $after = [];
 
     /** @var DesiredCapabilities */
@@ -71,6 +71,9 @@ class BrowserBuilder
     {
 
         $this->capabilities->setCapability(ChromeOptions::CAPABILITY, $this->options);
+
+        $this->host = $this->host ?: config('browser.host', 'http://127.0.0.1');
+        $this->port = $this->port ?: config('browser.host', 9515);
 
         $driver = RemoteWebDriver::create(
             $this->host . ':' . $this->port,
