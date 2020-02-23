@@ -315,7 +315,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v6.15.1",
+            "version": "v6.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -359,16 +359,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v6.15.1",
+            "version": "v6.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "38ea484c5594cd33c677782bc205536a284a8918"
+                "reference": "2f5f449750e6821f2d8c4e993a4ff77c7d7d5cc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/38ea484c5594cd33c677782bc205536a284a8918",
-                "reference": "38ea484c5594cd33c677782bc205536a284a8918",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/2f5f449750e6821f2d8c4e993a4ff77c7d7d5cc8",
+                "reference": "2f5f449750e6821f2d8c4e993a4ff77c7d7d5cc8",
                 "shasum": ""
             },
             "require": {
@@ -416,7 +416,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-02-11T22:42:15+00:00"
+            "time": "2020-02-14T14:20:14+00:00"
         },
         {
             "name": "laravel/dusk",
