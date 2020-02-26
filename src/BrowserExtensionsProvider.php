@@ -23,9 +23,7 @@ class BrowserExtensionsProvider extends ServiceProvider
     public function boot()
     {
         Browser::macro('executeCommand', function($command, $data) {
-            (new ExecuteCommand)($this, $command, $data);
-
-            return $this;
+            return (new ExecuteCommand)($this, $command, $data);
         });
 
         Browser::macro('configure', function() {
